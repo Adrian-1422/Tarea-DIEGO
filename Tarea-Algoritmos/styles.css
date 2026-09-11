@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Titulo superior */
+h1 {
+    margin: 0;
+    padding: 14px 20px;
+    background-color: #217346;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* Barra de formula */
+.barra-formula {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+
+#nombre-celda {
+    width: 70px;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border: 1px solid #bfbfbf;
+    text-align: center;
+    font-weight: bold;
+}
+
+#formula {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    font-size: 14px;
+}
+
+#formula:focus {
+    border: 2px solid #217346;
+}
+
+/* Boton limpiar */
+#limpiar {
+    margin: 10px 20px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #217346;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#limpiar:hover {
+    background-color: #185c37;
+}
+
+/* Zona de la hoja */
+.excel {
+    margin: 0 20px 20px 20px;
+    overflow: auto;
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #d9d9d9;
+    min-width: 100px;
+    height: 28px;
+}
+
+/* Encabezados de columnas */
+thead th {
+    background-color: #e7e6e6;
+    text-align: center;
+    font-weight: normal;
+    color: #333333;
+}
+
+/* Numeros de filas */
+tbody th {
+    min-width: 45px;
+    background-color: #e7e6e6;
+    text-align: center;
+    font-weight: normal;
+    color: #333333;
+}
+
+/* Celdas */
+td {
+    padding: 4px 6px;
+    background-color: white;
+    cursor: cell;
+}
+
+/* Celda seleccionada */
+td:focus {
+    outline: 2px solid #217346;
+    outline-offset: -2px;
+    background-color: white;
+}
